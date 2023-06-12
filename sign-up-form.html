@@ -4,9 +4,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+        .banner {
+            position: relative;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 20%;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+        }
+        .text {
+            position: absolute;
+            top: 55%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 45px;
+        }
+        @font-face {
+        font-family: GraublauWeb;
+            src: url("/Norse-Bold.otf") format("opentype");
+         }
+        /* Add more font formats if necessary */
+        /* Specify the correct paths to your font files */
+    </style>
 </head>
 <body>
+
+<!-- <div class="container">
+    <h1>My First Bootstrap Page</h1>
+    <p>This is some text.</p>
+</div> -->
+<div class="row">
+    <div class="col-sm-4">
+        <div class="banner">
+            <img src="olena-sergienko-r0M9HrfJMBM-unsplash.jpeg" class="img-fluid w-100" alt="Image">
+            <div class="overlay">
+                <img src="odin-lined.png" class="logo" alt="Logo">
+                <div class="text" style="font-family: 'GraublauWeb', sans-serif;">ODIN PROJECT</div>
+
+            </div>
+            <!-- <img src="odin-lined.png" class="logo" alt="Logo"> -->
+        </div>
+        <!-- <img class="img-responsive" src="olena-sergienko-r0M9HrfJMBM-unsplash.jpeg" alt="Chania"> -->
+        <!-- <img src="olena-sergienko-r0M9HrfJMBM-unsplash.jpeg" class="img-fluid w-100" alt="Image"> -->
+    </div>
+    <div class="col-sm-8  bg-light py-8 ">
+        <div class="row bg-light">
+                <!-- <div style="padding-top: 50px;"></div> -->
+                <div class="pt-5"></div>
+                <p style="text-align:center">Welcome to the website , this is the signin page create an account and get started!!</p>
+                <div class="pt-5"></div>
+                
+        </div>
+          <div class="row bg-light text-center">
+            <!-- <div class="card text-center"> -->
+                <div class="card shadow"> 
+                <div class="card-body">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <!-- <p class="text-center">Lets gooo</p> -->
+                        <p>lets gooo</p>
+                        <div class="col-md-6">
+                          <label for="validationCustom01" class="form-label">First name</label>
+                          <input type="text" class="form-control" id="validationCustom01" value="Peter" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="validationCustom02" class="form-label">Last name</label>
+                          <input type="text" class="form-control" id="validationCustom02" value="Parker" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="validationCustom03" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="validationCustom04" class="form-label">Phone number</label>
+                            <input type="tel" class="form-control" id="validationCustom04" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="validationCustom06" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="validationCustom06" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="validationCustom06" class="form-label"> Confirm Password</label>
+                            <input type="password" class="form-control" id="validationCustom06" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                        <!-- <div class= "row-sm-8">
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Create Account</button>
+                              </div>
+
+                        </div> -->
+                      </form>
+                </div>
+            <!-- </div> -->
+                <!-- <div class="card-footer text-muted">
+                 <a href="#" class="btn btn-primary">Create Account</a>
+              </div> -->
+          </div>
+          <div class="row bg-light ">
+            <div class="pt-4"></div>
+            <div class= "row-sm-8">
+                <div class="col-4">
+                    <button class="btn btn-primary" type="submit">Create Account</button>
+                  </div>
+
+            </div>
+            <div class="pt-4"></div>
+            <div class="col-sm-4">Already have an account? <a href="">Login</a> </div>
+          </div>
+
+
+    </div>
+    <!-- <div class="col-sm-4">.col-sm-4</div> -->
+
+
+
+<div></div>
     
 </body>
 </html>
